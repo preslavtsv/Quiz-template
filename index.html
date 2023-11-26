@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz за Дихателната Система</title>
+        <link rel="icon" type="image/x-icon" href="/vid & img/favicon.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <video
+            autoplay="autoplay"
+            loop="loop"
+            muted="muted"
+            playsinline="playsinline"
+            id="background-video">
+            <source src="vid & img/background_video.mp4" type="video/mp4">
+        </video>
+        <div id="quiz-container">
+            <h1>Quiz за Дихателната Система</h1>
+            <p id="question"></p>
+            <div id="options-container">
+                <button class="option" onclick="checkAnswer(0)"></button>
+                <button class="option" onclick="checkAnswer(1)"></button>
+                <button class="option" onclick="checkAnswer(2)"></button>
+                <button class="option" onclick="checkAnswer(3)"></button>
+            </div>
+            <button id="check-answer" onclick="checkAnswer()">Провери</button>
+            <button id="next-question" onclick="nextQuestion()">Следващ въпрос</button>
+            <div id="result-container" style="display: none;">
+                <h2>Резултати:</h2>
+                <p id="score"></p>
+                <p id="time"></p>
+            </div>
+            <footer>Made by Viktor Nedev and Preslav Tsvetanov</footer>
+        </div>
+        <div id="result-container" style="display: none;">
+            <h2>Резултати:</h2>
+            <p id="score"></p>
+            <p id="time"></p>
+        </div>
+        <audio id="sound-effect" src="" preload="auto"></audio>
+
+        <script src="script.js"></script>
+    </body>
+</html>
